@@ -1,6 +1,8 @@
 <template>
   <div>
-    {{msg}}
+    <!-- <h4>1.数据绑定</h4> -->
+    <p>{{msg}}</p>
+    <!-- <textarea v-model="msg" id="" cols="30" rows="10"></textarea> -->
   </div>
 </template>
 
@@ -10,6 +12,11 @@ export default {
     return {
       msg: '这是第一个demo'
     }
+  },
+  created:function(){
+    //定义常量
+    const q = "想啥呢";
+    this.msg = q;
   }
 }
 </script>

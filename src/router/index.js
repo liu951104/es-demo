@@ -12,14 +12,14 @@ export default new Router({
       component: index
     },
     {
-	  path: '/demo1',
-	  name: 'demo1',
-	  component: resolve => require(['../components/content/demo1.vue'], resolve)
+	  path: '/前言',
+	  name: '前言',
+	  component: resolve => require(['../components/content/前言.vue'], resolve)
 	},
 	{
-	  path: '/demo1',
-	  name: 'demo1',
-	  component: resolve => require(['../components/content/demo1.vue'], resolve)
+	  path: '/块级作用域',
+	  name: '块级作用域',
+	  component: resolve => require(['../components/content/块级作用域.vue'], resolve)
 	},
   ]
 })

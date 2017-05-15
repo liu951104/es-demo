@@ -2,19 +2,8 @@
   <div>
     <dl class="bar-left">
       <dt>目录</dt>
-      <dd><router-link to="demo1">es6起步</router-link></dd>
-      <dd>es6起步</dd>
-      <dd>es6起步</dd>
-      <dd>es6起步</dd>
-      <dd>es6起步</dd>
-      <dd>es6起步</dd>
-      <dd>es6起步</dd><dd>es6起步</dd>
-      <dd>es6起步</dd>
-      <dd>es6起步</dd>
-      <dd>es6起步</dd>
-      <dd>es6起步</dd>
-      <dd>es6起步</dd>
-      <dd>es6起步</dd>
+      <dd><router-link to="前言">前言</router-link></dd>
+      <dd><router-link to="块级作用域">块级作用域</router-link></dd>
     </dl>
   </div>
 </template>
@@ -49,13 +38,25 @@ dl.bar-left{
   background: #ccc;
   float: left;
 }
+dl.bar-left dt{
+  text-align:center;
+  padding: 20px 0;
+  font-size: 18px;
+  border-bottom: 1px solid #f4f4f4;
+  /*text-align: left;*/
+}
 dl.bar-left dd{
   margin:0;
-  padding: 20px 0;
+  /*padding: 20px 0;*/
   width: 200px;
   color: #fff
 }
-dl.bar-left dd:hover{
+dl.bar-left dd a{
+  text-align: center;
+  display: block;
+  padding: 20px 0;
+}
+dl.bar-left dd a:hover{
   cursor: pointer;
   background: #75aa34;
 }
