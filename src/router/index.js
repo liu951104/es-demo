@@ -21,5 +21,10 @@ export default new Router({
 	  name: '块级作用域',
 	  component: resolve => require(['../components/content/块级作用域.vue'], resolve)
 	},
+	{
+	  path: '/字符串和正则表达式',
+	  name: '字符串和正则表达式',
+	  component: resolve => require(['../components/content/字符串和正则表达式.vue'], resolve)
+	},
   ]
 })

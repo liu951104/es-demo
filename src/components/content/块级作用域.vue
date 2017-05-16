@@ -4,6 +4,7 @@
     <p style="padding:10px 0">{{msg}}</p>
     <textarea v-model="msg" id="" cols="60" rows="10"></textarea>
     <div style="padding:5px 0">result:{{result}}</div>
+    <div><h4>最佳实践</h4>{{best}}</div>
   </div>
 </template>
 
@@ -12,7 +13,8 @@ export default {
   data () {
     return {
       result:'',
-      msg: '这是第一个demo'
+      msg: '这是第一个demo',
+      best:''
     }
   },
   created:function(){
@@ -91,6 +93,8 @@ export default {
       },100)
     }
 
+    const about = "在默认情况下使用 const ，而只在你知道变量值需要被更改的情况下才使用 let 。这在代码中能确保基本层次的不可变性，有助于防止某些类型的错误";
+    this.best = about;
   }
 }
 </script>

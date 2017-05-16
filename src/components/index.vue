@@ -1,6 +1,6 @@
 <template>
   <div class="hello">
-  测试
+  ES6 + VUE 的练习
   </div>
 </template>
 

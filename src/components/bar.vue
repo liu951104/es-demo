@@ -4,6 +4,11 @@
       <dt>目录</dt>
       <dd><router-link to="前言">前言</router-link></dd>
       <dd><router-link to="块级作用域">块级作用域</router-link></dd>
+      <dd><router-link to="字符串和正则表达式">字符串和正则表达式</router-link></dd>
+      <dd><router-link to="函数">函数</router-link></dd>
+      <dd><router-link to="字符串和正则表达式">字符串和正则表达式</router-link></dd>
+      <dd><router-link to="字符串和正则表达式">字符串和正则表达式</router-link></dd>
+      <dd><router-link to="字符串和正则表达式">字符串和正则表达式</router-link></dd>
     </dl>
   </div>
 </template>
