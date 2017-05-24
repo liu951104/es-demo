@@ -1,8 +1,21 @@
 <template>
   <div>
-    <!-- <h4>1.数据绑定</h4> -->
-    <p>{{content}}</p>
-    <!-- <textarea v-model="msg" id="" cols="30" rows="10"></textarea> -->
+    <h3>1.参数默认值</h3>
+    <hr>
+    <p>makeRequest:function(data1,data2 = "哈哈哈",data3 = "嘿嘿嘿"){
+      return data1 + data2 + data3
+    }</p>
+    <br>
+    <p>makeRequest("我的天嗯嗯") => {{Request.content1}}</p>
+    <p>makeRequest("我的天嗯嗯","ok") => {{Request.content2}}</p>
+    <p>makeRequest("我的天嗯嗯","ok","好吧") => {{Request.content3}}</p>
+    <hr>
+    <h3>2.参数默认值</h3>
+    <hr>
+    <p>makeRequest("我的天嗯嗯") => {{Request.content1}}</p>
+    <p>makeRequest("我的天嗯嗯","ok") => {{Request.content2}}</p>
+    <p>makeRequest("我的天嗯嗯","ok","好吧") => {{Request.content3}}</p>
+    <hr>
   </div>
 </template>
 
@@ -11,17 +24,23 @@ export default {
   data () {
     return {
       msg: '这是第一个demo',
+      Request:{
+        
+      },
       content:''
     }
   },
   created:function(){
-    this.content = this.makeRequest("嗯嗯嗯");
+    this.$set(this.Request,"content1",this.makeRequest("我的天"))
+    this.$set(this.Request,"content2",this.makeRequest("我的天","ok"))
+    this.$set(this.Request,"content3",this.makeRequest("我的天","ok","好吧"))
   },
   methods:{
     /**
      * 参数默认值
      */
     makeRequest:function(data1,data2 = "哈哈哈",data3 = "嘿嘿嘿"){
+      console.log(arguments)
       return data1 + data2 + data3;
     }
   }
