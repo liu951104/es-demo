@@ -26,5 +26,10 @@ export default new Router({
 	  name: '字符串和正则表达式',
 	  component: resolve => require(['../components/content/字符串和正则表达式.vue'], resolve)
 	},
+	{
+	  path: '/函数1',
+	  name: '函数1',
+	  component: resolve => require(['../components/content/函数1.vue'], resolve)
+	}
   ]
 })
